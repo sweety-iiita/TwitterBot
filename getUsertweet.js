@@ -4,7 +4,7 @@ module.exports = (app) => {
 }
 
 const getUser = function(request,response) {
-    connection.query("SELECT * FROM tweet_table", function(error,result) {
+    connection.query("SELECT * FROM tweet_table LIMIT 5", function(error,result) {
         console.log("get inside")
         console.log(request.params.id)
         let found = result.find((item) => {
@@ -26,8 +26,6 @@ const getUser = function(request,response) {
                  response.send(result)
                }
           })
-  //        response.send(result)
-     //     response.sendStatus(204)
         }
         else
         {
