@@ -14,9 +14,7 @@ const getUsers = (request,response) => {
       {
           console.log("successful query1223")
           response.send(result)
-  //        response.sendStatus(204);
-
-        }
+      }
     })
 } 
 

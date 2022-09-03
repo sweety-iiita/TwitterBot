@@ -1,6 +1,6 @@
 const connection = require('./database')
 module.exports = (app) => {
-    app.route("/users/tweet/").post(postUsers)
+    app.route("/users/tweet").post(postUsers)
 }
 
 const postUsers =  function(request, response) {
@@ -35,5 +35,4 @@ const postUsers =  function(request, response) {
         }
      })
      response.sendStatus(204);
-    // res.status(201).json(item);
   }

@@ -4,7 +4,6 @@ const app = express()
 
 const bodyParser    = require('body-parser')
 const req = require('express/lib/request')
-//const path = require('path')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))

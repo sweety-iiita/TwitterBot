@@ -26,8 +26,6 @@ const getUser = function(request,response) {
                  response.send(result)
                }
           })
-  //        response.send(result)
-     //     response.sendStatus(204)
         }
         else
         {

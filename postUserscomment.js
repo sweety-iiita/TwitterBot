@@ -35,5 +35,4 @@ const postUsers =  function(request, response) {
         }
      })
      response.sendStatus(204);
-    // res.status(201).json(item);
   }
