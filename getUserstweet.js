@@ -1,10 +1,10 @@
 const connection = require('./database')
 module.exports = (app) => {
-    app.route("/users").get(getUsers)
+    app.route("/users/tweet").get(getUsers)
 }
 
 const getUsers = (request,response) => {
-    connection.query("SELECT * FROM tweet_table", function (error, result ) {
+    connection.query("SELECT * FROM tweet_table LIMIT 5", function (error, result ) {
       if(error)
       {
           console.log("Error in the query");
@@ -14,9 +14,7 @@ const getUsers = (request,response) => {
       {
           console.log("successful query1223")
           response.send(result)
-  //        response.sendStatus(204);
-
-        }
+       }
     })
 } 
 
