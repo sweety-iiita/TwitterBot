@@ -2,7 +2,7 @@
 
 1. Install node version v16.15.1  or more
 2. Install npm version 8.11.0
-3. From terminal go to folder directory TwitterBot
+3. Pull this code from terminal and go to directory TwitterBot
 4. Install mysql2
 5. Run command : node app.js
 6. Hit api by application postman or any other with below information : 
