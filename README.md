@@ -18,8 +18,8 @@
                   {"name": "Narendra Modi", "tweets": "Digital Bharat"}
 
   2.  getUserstweet
-       1. url : http://localhost:8080/users/tweet   (select GET in poastman)
-       Result for get api : 
+       1. url : http://localhost:8080/users/tweet   (select GET in poastman)                                     
+       2. Result for get api : 
 
        [
        {
@@ -46,7 +46,7 @@
 
    3. getUsertweet (particular user)
        1. url : http://localhost:8080/users/tweet/Narendra Modi
-          Result for get api : 
+       2.Result for get api : 
 
           [
            {
@@ -72,13 +72,16 @@
               ]
 
     4. postUserscomment 
+    
          1. url : http://localhost:8080/users/comment
          2. payload : {"name": "sweety", "tweets": "Happy Birthday ", "comments": "thanks"}
                        {"name": "sweety", "tweets": "Jai Hind", "comments": "Jai Bharat"}
+                       
 
     5. getUsersComment
+    
          1. url : http://localhost:8080/users/comment
-         Result :
+         2. Result :
          [
        {
         "name": "sweety",
